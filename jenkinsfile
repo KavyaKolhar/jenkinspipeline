@@ -7,23 +7,31 @@ stages
 {
     stage('Build')
     {
+    steps{
         echo "Building the project..."
+    }
     }
     
     stage('Deploy')
     {
+    steps{
         echo "Deploy the project..."
+    }
     }
     
     stage('Test')
     {
+        steps{
         echo "Testing the project..."
     }
-    
+    }
     stage('Release')
     {
+    steps{
         echo "Releasing the project..."
     }
+    }
+    
 }
 
 }
